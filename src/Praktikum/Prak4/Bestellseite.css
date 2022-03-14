@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+    font-family: 'Original Surfer', cursive;
+    font-family: 'Zen Dots', cursive;
+}
+
+nav{
+	background: #c0392b;
+	height: 15%;
+	width: 100%;
+}
+
+label.logo{
+	color: #4cd137;
+	font-size: 2.0em;
+	line-height: 2.5em;
+	padding: 0% 3%;
+	font-weight: bold;
+}
+
+nav ul{
+	float: right;
+	margin-right: 1%;
+    margin-top: 2%;
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+nav ul li a{
+	color: white;
+	font-size: 1.25em;
+	display: block;
+	font-weight: bold;
+    padding-right: 1.5em;
+}
+
+a.active,a:hover{
+	background: #1b9bff;
+	transition: .5s;
+}
+
+input[type=image]{
+	border: 1px black solid;
+    width: 100px;
+}
+
+html{
+	background: url("Background2.jpg") no-repeat center fixed;
+	background-size: cover;
+}
+
+section{
+    border: 0.125em #535c68 solid;
+    border-radius: 0.3125em;
+  	background-color: #f2f2f2;
+  	padding: 0%;
+  	text-align: center;
+  	margin: 1% auto;
+    max-width: 40%;
+}
+
+section::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row{
+	display: flex;
+	justify-content: center;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 1%;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/**/
+input[type=button], input[type=submit]{
+  background-color: #4CAF50;
+  padding: 4% 4%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1.0625em;
+}
+
+input[type=submit]:hover{
+  background-color: #45a049;
+}
+
+input[type=button]:hover{
+  background-color: #45a049;
+}
+
+.title{
+    font-size: 2.5em;
+    margin-top: 3%;
+}
+
+input[type=text], select{
+  width: 80%;
+  padding: 3%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.input-container {
+  display: flex;
+  width: 86%;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
+.delivery_dining {
+  padding: 2%;
+  background: #ecf0f1;
+  color: black;
+  min-width: 5%;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px #7f8c8d solid;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.shopping_cart{
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+.Preis{
+	margin-top: 3%;
+	font-size: 1.5625em;
+}
+
+.Warenkorb{
+	margin: 3% 0%;
+}
+
+.myButtons{
+    margin: 2% 4% 3%;
+}
+
+h3{
+  font-size: 1em;
+}
+
+@media screen and (max-width: 850px){
+    .title, .Preis, .Warenkorb{
+        font-size: 2em;
+    }
+
+    .Preis, .Warenkorb{
+        font-size: 1em;
+    }
+    label.logo{
+        font-size: 1em;
+    }
+    h3{
+        font-size: 0.7em;
+    }
+    input[type=image]{
+        width: 85px;
+    }
+    nav ul li a{
+        font-size: 0.7em;
+    }
+    nav ul{
+        margin-top: 2%
+    }
+}
+
+@media screen and (max-width: 710px){
+    input[type=image]{
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+}
+
+
+
+

@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+}
+
+body {
+    font-family: 'Original Surfer', cursive;
+    font-family: 'Zen Dots', cursive;
+
+}
+
+.Bestellung{
+	width: 100%;
+	text-align: center;
+	padding: 1%;
+	border-radius: 4px;
+}
+
+.fieldset{
+	padding: 1%;
+}
+
+.legend{
+	font-size: 1.875em;
+}
+
+input[type=radio]{
+	margin-right: 0%;
+}
+
+nav{
+	background: #c0392b;
+	height: 15%;
+	width: 100%;
+}
+
+label.logo{
+	color: #4cd137;
+	font-size: 2.0em;
+	line-height: 3em;
+	padding: 0% 3%;
+	font-weight: bold;
+	font-family: 'Original Surfer', cursive;
+    font-family: 'Zen Dots', cursive;
+}
+
+nav ul{
+	float: right;
+	margin-right: 1%;
+	margin-top: 4%;
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+nav ul li a{
+	color: white;
+	font-size: 1.25em;
+	display: block;
+	font-weight: bold;
+	padding-right: 1.5em;
+}
+
+a.active,a:hover{
+	background: #1b9bff;
+	transition: .5s;
+}
+
+input[type=image]{
+	border: 1px black solid;
+}
+
+html{
+	background: url("Background2.jpg") no-repeat center fixed;
+	background-size: cover;
+}
+
+section{
+	border: 2px #535c68 solid;
+  	background-color: #f2f2f2;
+  	padding: 0%;
+  	margin: 1% auto;
+    max-width: 40%;
+}
+
+section::after {
+  content: "";
+  clear: both;
+  display: table;
+}

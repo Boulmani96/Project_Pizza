@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Bestellseite.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Original+Surfer&family=Zen+Dots&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Bestellseite</title>
+</head>
+<body>
+		<nav>
+			<label class="logo">Alfredo</label>
+			    <ul>
+			      <li><a href="#">Bestellung</a></li>
+			      <li><a href="Kunde.html">Kunde</a></li>
+			      <li><a href="#">Bäcker</a></li>
+			      <li><a href="#">Fahrer</a></li>
+			    </ul>
+			</div>
+	  </nav>
+	  <section>
+	  	<h2 class="title">Speisekarte</h2>
+	  	<div class="row">
+	  		<div class="column">
+				<input type="image" src="Margherita.jpg" id="4.00" name="Margherita" alt=" " width="100px" height=auto 
+					tabindex="-1" onclick="onClick(this)">
+				<h3>Margherita</h3> 
+				<h3> 4.00 €</h3>
+			</div>
+			<div class="column">
+				<input type="image" src="salami.jpg" id="4.50" name="Salami" alt=" " width="100px" height=auto 
+				    tabindex="-1" onclick="onClick(this)">
+				<h3>Salami</h3> 
+				<h3> 4.50 €</h3>
+			</div>
+			<div class="column">
+				<input type="image" src="Hawaii.jpg" id="5.50" name="Hawaii" alt=" " width="100px" height=auto
+				        tabindex="-1" onclick="onClick(this)">
+				<h3>Hawaii</h3> 
+				<h3> 5.50 €</h3>
+			</div>
+		</div>
+		<form action="Bestellung.php" accept-charset="utf-8" method="post">
+			<h2 class="Warenkorb">Warenkorb<span class="shopping_cart"><i class="material-icons">shopping_cart</i><span>
+			</h2>
+			<select id="mySelect" name="mySelect[]" size="4" tabindex="-1" multiple>
+				
+			</select>
+			<div class="Preis">
+				Gesamt Preis: <span id="gesamtpreis" name="gesamtpreis">0</span> €
+			</div>
+			<div class="input-container">
+			    <span class="delivery_dining"><i class="material-icons" style="font-size: 30px;">delivery_dining</i></span>
+			    <input class="input-field" type="text" name="Adresse" id="Adresse" placeholder="Ihre Adresse" tabindex="1">
+ 			</div>
+ 			<div class="myButtons">
+				<input type="button" name="reset" value="Alle Löschen" tabindex="2" onclick="AllLoesche()">
+				<input type="button" name="AuswahlLoeschen" value="Auswahl löschen" tabindex="3" onclick="AuswahlLoeschen()">
+				<input type="submit" name="submit" value="Bestellen" tabindex="4">
+			</div>
+		</form>
+	  </section>
+	<script src="Bestellseite.js"></script>
+</body>
+</html>

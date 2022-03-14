@@ -1,0 +1,42 @@
+img {
+    float: left;
+    width: 30%;
+    height: 100px;
+    margin-top: 2%;
+}
+
+header{
+    background: #494949;
+    height: 140px;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 1.25em;
+    display: block;
+    padding-right: 1.5em;
+    background: #7f8c8d;
+}
+
+article {
+    display: inline-block;
+    height: 15em;
+    width: 15em;
+    overflow: auto;
+    margin-right: 5%;
+}
+
+h5{
+    background: #494949;
+    color: white;
+    text-align: center;
+}

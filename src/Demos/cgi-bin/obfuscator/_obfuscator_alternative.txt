@@ -1,0 +1,4 @@
+Alternative: https://www.phpencode.org/
+
+Nachteil der aktuellen Lösung:
+Bei einem Fehler wird der Quellcode ausgegeben - und zwar unverschleiert!
